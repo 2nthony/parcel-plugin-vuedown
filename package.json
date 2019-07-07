@@ -1,0 +1,57 @@
+{
+  "name": "parcel-plugin-vuedown",
+  "description": "Parcel plugin for vuedown",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "evillt/parcel-plugin-vuedown"
+  },
+  "author": "evillt <ijoec123@gmail.com> (https://evila.me)",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "vuedownAsset.js"
+  ],
+  "scripts": {
+    "lint": "xo"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-rem": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.0.0-rc.13",
+    "lint-staged": "^7.2.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.17.0",
+    "vuedown": "^3.1.0",
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "extends": [
+      "rem",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "unicorn/filename-case": "off"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "xo --fix",
+        "git add"
+      ],
+      "*.{json,md}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  }
+}
