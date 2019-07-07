@@ -1,6 +1,6 @@
 # parcel-plugin-vuedown
 
-> Parcel plugin for vuedown
+> Parcel plugin for [vuedown](https://github.com/evillt/vuedown)
 
 Please consider starring the project to show your ❤️ and support.
 
@@ -9,6 +9,12 @@ Please consider starring the project to show your ❤️ and support.
 [![CircleCI](https://badgen.net/circleci/github/evillt/parcel-plugin-vuedown?icon=circleci)](https://circleci.com/gh/evillt/parcel-plugin-vuedown/tree/master)
 [![License](https://badgen.net/npm/license/parcel-plugin-vuedown)](./LICENSE)
 [![donate](https://badgen.net/badge/support%20me/donate/f2a)](https://donate.evila.me)
+
+## Usage
+
+```console
+yarn add parcel-plugin-vuedown --dev
+```
 
 ## Contributing
 
